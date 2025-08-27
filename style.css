@@ -3,13 +3,14 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden; /* Horizontal scrollni yo‘qotadi */
+  overflow-x: hidden;
 }
 .container {
   max-width: 1224px;
   margin: 0 auto;
   width: 100%;
   padding: 0 15px;
+  box-sizing: border-box;
 }
 .nakrutka-box {
   padding: 50px;
