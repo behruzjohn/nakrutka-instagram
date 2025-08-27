@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden; /* Horizontal scrollni yo‘qotadi */
 }
 .container {
   max-width: 1224px;
@@ -39,12 +40,12 @@ body {
   margin-top: 40px;
   display: flex;
   justify-content: center;
-  width: 500px;
+  width: 100%;
   flex-wrap: wrap;
 }
 .input-box input {
   padding-left: 20px;
-  width: 100%;
+  width: 96%;
   height: 35px;
   margin-top: 10px;
   border: none;
@@ -73,11 +74,10 @@ body {
   gap: 20px;
 }
 
-/* Planshet va kichik ekranlar (768px gacha) */
 @media (max-width: 768px) {
   .nakrutka-box_nav {
-    width: 90%;
-    height: auto; /* balandligi avtomatik */
+    width: 100%;
+    height: auto;
     padding: 20px;
   }
 
@@ -105,8 +105,13 @@ body {
   }
 }
 
-/* Juda kichik telefonlar (400px gacha) */
-@media (max-width: 400px) {
+@media (max-width: 450px) {
+  .input-box {
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-left: 0;
+  }
   .nakrutka-box_nav h1 {
     font-size: 32px;
   }
@@ -115,10 +120,7 @@ body {
     width: 80px;
     margin-top: -10px;
   }
-  .input-box {
-    justify-content: center;
-    margin-left: 40px;
-  }
+
   .btn-group {
     width: 220px;
     align-items: center;
@@ -126,7 +128,7 @@ body {
     gap: 0px;
   }
   .input-box input {
-    width: 200px;
+    width: 100%;
     font-size: 14px;
     height: 35px;
   }
