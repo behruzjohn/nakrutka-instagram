@@ -1,0 +1,139 @@
+body {
+  background: linear-gradient(to left, #ffb6c1, #ff69b4, #ff1493);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1224px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+}
+.nakrutka-box {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+.img-div img {
+  margin-top: -30px;
+  object-fit: cover;
+}
+.nakrutka-box_nav {
+  border-radius: 12px;
+  border: 3px solid black;
+  width: 600px;
+  height: 600px;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+.nakrutka-box_nav h1 {
+  color: #e4b37e;
+  font-size: 65px;
+  font-family: 'Luckiest Guy', cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.input-box {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  flex-wrap: wrap;
+}
+.input-box input {
+  padding-left: 20px;
+  width: 100%;
+  height: 35px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+}
+.input-box button {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  width: 200px;
+  border-radius: 20px;
+  height: 50px;
+}
+#start {
+  background-color: greenyellow;
+}
+#stop {
+  background-color: red;
+  color: #fff;
+}
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Planshet va kichik ekranlar (768px gacha) */
+@media (max-width: 768px) {
+  .nakrutka-box_nav {
+    width: 90%;
+    height: auto; /* balandligi avtomatik */
+    padding: 20px;
+  }
+
+  .nakrutka-box_nav h1 {
+    font-size: 45px;
+    text-align: center;
+  }
+
+  .input-box {
+    padding-right: 20px;
+    width: 100%;
+  }
+
+  .input-box input {
+    width: 100%;
+    font-size: 16px;
+    height: 40px;
+  }
+
+  .input-box button {
+    width: 200px;
+    margin-left: 0;
+    font-size: 18px;
+    height: 45px;
+  }
+}
+
+/* Juda kichik telefonlar (400px gacha) */
+@media (max-width: 400px) {
+  .nakrutka-box_nav h1 {
+    font-size: 32px;
+  }
+
+  .img-div img {
+    width: 80px;
+    margin-top: -10px;
+  }
+  .input-box {
+    justify-content: center;
+    margin-left: 40px;
+  }
+  .btn-group {
+    width: 220px;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .input-box input {
+    width: 200px;
+    font-size: 14px;
+    height: 35px;
+  }
+
+  .input-box button {
+    width: 150px;
+    font-size: 16px;
+    height: 40px;
+  }
+}

